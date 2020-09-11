@@ -1,0 +1,317 @@
+﻿.btn {
+    width:120px;
+}
+    .btn:hover {
+        background: #FF512F; /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #DD2476, #FF512F); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #DD2476, #FF512F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+.card-body {
+    background: #141E30; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #243B55, #141E30); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: darkgray;
+    text-align:center;
+}
+
+.menu-bar {
+    background: #0f0c29; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Work Sans', sans-serif;
+}
+
+.nav-link {
+    font-size: 17px;
+    margin: 2px;
+    font-weight: 400;
+}
+.navbar-light .nav-item .nav-link {
+    color: whitesmoke;
+    font-weight: 600;
+}
+
+.navbar-light .nav-item .nav-link:hover{
+    color:orange;
+}
+
+.menu-bar .navbar-toggler {
+    outline: none !important;
+    border: none !important;
+}
+
+.nav-link:hover {
+    font-weight: 400;
+    border-bottom: 1px solid orange;
+}
+
+.navbar-brand{
+    width: 150px;
+}
+
+.services {
+    background: #007991; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #78ffd6, #007991); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #78ffd6, #007991); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.presentation {
+    width: 100%;
+    height: 150vh;
+    background-image: url("/images/hotel3.png");
+    background-size: cover;
+    font-family: "Comic Sans MS", "Lucida Sans Unicode", sans-serif;
+}
+.introduction {
+    text-align: center;
+    padding-top: 450px;
+}
+
+.intro-text {
+    color: white;
+    font-size: 25px;
+}
+.bg-black{
+    background:red;
+}
+.services-icon {
+    display: block;
+    font-size: 32px;
+    margin-bottom: 16px;
+    color: #000;
+    padding: 8px 16px;
+}
+
+.social{
+    padding:0;
+}
+h4{
+    padding: 15px 0px;
+}
+.social li{
+    display: inline-block;
+    background-color: #fff;
+    width:35px;
+    height:35px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    padding: 0cm;
+}
+
+
+.our-team {
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    padding: 30px;
+}
+
+.our-team img {
+    width: 100%;
+    height: 20vh;
+    height: auto;
+    transition: all 0.5s ease-in-out 0s;
+    }
+
+.our-team {
+    border: 2px solid black;
+}
+
+.our-team:hover {
+        border: 2px solid darkcyan;
+    }
+.our-team:hover img {
+     transform: scale(1.2);
+       }
+
+.our-team .socials {
+        list-style: none;
+        padding: 30px 15px;
+        margin: 0;
+        background-color: rgba(63,166,149,1);
+        border-bottom-right-radius: 50px;
+        position: absolute;
+        top: 0;
+        left: -50%;
+        transition: all 0.4s ease-in-out 0s;
+    }
+
+.our-team:hover .socials {
+        left: 0;
+    }
+
+.our-team .socials li {
+        display: block;
+    }
+
+.our-team .socials li a {
+        display: block;
+        padding: 10px 0;
+        font-size: 18px;
+        color: #fff;
+        text-decoration: none;
+        transition: all 0.3s ease-in-out 0s;
+}
+
+.our-team .socials li:first-child a {
+        padding-top: 0;
+        }
+
+.our-team .socials li a:hover {
+            color: #000;
+        }
+.our-team .btn {
+        width: 100%;
+        margin: 10px;
+    }
+
+.our-team .team-content {
+        width: 100%;
+        background: rgba(0, 0,0, 0.6);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+
+.our-team .title {
+        font-size: 22px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        color: #fff;
+        margin: 0 0 5px 0;
+    }
+
+.our-team .post {
+        display: block;
+        font-size: 14px;
+        color: #0facf3;
+    }
+
+
+.cards {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 10px;
+    font-family: "Comic Sans MS", "Lucida Sans Unicode", sans-serif;
+    text-transform: uppercase;
+    padding: 70px 30px;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    margin-top: 20px;
+}
+
+.cards h3{
+    font-size: 30px;
+}
+
+
+
+.container-4 {
+    margin-top: 2%;
+    margin-left: 25%;
+
+}
+.card:hover {
+    border: 2px solid black;
+}
+
+.container-5 {
+    text-align: center;
+    background-color: darkcyan;
+    height: 300px;
+    margin-top: 20px;
+}
+.titles-5 h1 {
+    color: darkkhaki;
+    margin-top:40px;
+}
+
+.titles {
+    margin-top:30px;
+    padding-top:20px;
+}
+
+.inter{
+    background-image: url("/images/bg.jpeg");
+    background-size: cover;
+    width: 100%;
+    height: 70vh;
+    line-height: 25px;
+    font-size: 20px;
+    color: aliceblue;
+}
+
+.contact-form {
+    background: #fff;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    width: 70%;
+}
+.front-pages {
+    padding: 90px 30px;
+    background: #abbaab; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffffff, #abbaab); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffffff, #abbaab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.front-pages h3 {
+    text-align: center;
+    color: darkolivegreen;
+    text-transform: uppercase;
+    font-family: "Comic Sans MS", "Lucida Sans Unicode", sans-serif;
+    color: cornflowerblue;
+}
+.front-pages p{
+    padding: 20px 10px;
+}
+
+.footer {
+    background: #0f0c29; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 400% 400%;
+    color: whitesmoke;
+    width: 100%;
+    margin-top: 70px;
+}
+.footer h4{
+    padding: 15px 15px;
+}
+.social{
+    padding:0;
+}
+.socical li {
+    display: inline-block;
+    background-color: #fff;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    padding: 0cm;
+}
+.social li a {
+    padding-top: 4px;
+    color: whitesmoke;
+    transition: .3s;
+    font-size: 25px;
+    text-align:center;
+}
+.social li a:hover{
+    color: sandybrown;
+    text-decoration: none;
+
+}
+.footer .links ul {
+    list-style-type:none;
+}
+.footer .links ul{
+    color:whitesmoke;
+    transition: color 0.2s;
+}
+.footer .links li a:hover {
+    text-decoration: none;
+    color: sandybrown;
+}

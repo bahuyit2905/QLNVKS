@@ -1,0 +1,107 @@
+﻿@model HotelRoomsCreateViewModel
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Create</h1>
+ 
+
+<h4>HotelRoom</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form enctype="multipart/form-data" asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input asp-for="Id" type="hidden" class="form-control" />
+            <input asp-for="urlImages" type="hidden"/>
+            <div class="form-group">
+                <label asp-for="FullName" class="control-label"></label>
+                <input asp-for="FullName" class="form-control" />
+                <span asp-validation-for="FullName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <div class="row form-group divUpload">
+                    <label asp-for="Images" class="control-label custom-file-upload">
+                        +
+                        
+                        <img id="blah" src=@Url.Content(Model.urlImages) alt="your image" />
+                    </label>
+                    <input asp-for="Images" onchange="readURL(this)" class="form-control" />
+
+                    <label for="file-upload">
+
+                    </label>
+
+                </div>
+                <span asp-validation-for="Images" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Amount" class="control-label"></label>
+                <input asp-for="Amount" class="form-control" />
+                <span asp-validation-for="Amount" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Acreage" class="control-label"></label>
+                <input asp-for="Acreage" class="form-control" />
+                <span asp-validation-for="Acreage" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+<style>
+    input[type="file"] {
+        display: none;
+    }
+
+    .custom-file-upload {
+        width: 160px;
+        height: 160px;
+        border: 1px solid #ccc;
+        display: inline-block;
+        padding-top: 37px;
+        cursor: pointer;
+        font-size: 60px;
+        text-align: center;
+    }
+
+    #blah {
+        display: block;
+        margin-top: -129px;
+        width:160px;
+        height:160px
+    }
+
+   
+
+    .divUpload {
+        overflow: hidden;
+    }
+</style>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+<script>
+    function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            reader.onload = function (e) {
+                document.getElementById('blah').src = e.target.result;
+                document.getElementById('blah').style.display = 'block';
+                document.getElementById('blah').style.width = '160px';
+                document.getElementById('blah').style.height = '160px';
+            }
+            reader.readAsDataURL(input.files[0]);
+            document.getElementById('Images').files[0] = input.files[0];
+        }
+    }
+</script>

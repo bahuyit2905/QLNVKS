@@ -1,0 +1,32 @@
+﻿@model IEnumerable<Employee>
+@{ 
+    //var employees = ViewBag.Employees as IEnumerable<Employee>;
+    ViewBag.Title = "Employee list";
+}
+    <div class="container-3">
+        <div class="cards">
+            <h3>Employee Shillamogram</h3>
+        </div>
+    </div>
+
+    <div class="row">
+        @foreach (var emp in Model)
+        {
+             var avatarPath = $"/images/{(emp.AvatarPath ?? "noavatar.png")} ";
+            <div class="col-sm-3">
+             <div class="card my-2">
+                 <div class="card-header">
+                     <h4>@emp.Fullname</h4>
+                 </div>
+                 <img src="@avatarPath" class="card-img-top"/>
+                 <div class="card-footer">
+                     @*<a href="Home/Details/1">View</a>
+                     @Html.ActionLink("View","Details","Home", new { id = emp.Id })*@
+                     <a asp-controller="Home" asp-action="Details" asp-route-id="@emp.Id" class="btn btn-warning">View</a>
+                     <a asp-controller="Home" asp-action="Edit" asp-route-id="@emp.Id" class="btn btn-primary">Edit</a>
+                      <a asp-controller="Home" asp-action="Details" asp-route-id="@emp.Id" class="btn btn-danger">Delete</a> 
+                 </div>
+             </div>
+        </div>
+        }
+    </div>

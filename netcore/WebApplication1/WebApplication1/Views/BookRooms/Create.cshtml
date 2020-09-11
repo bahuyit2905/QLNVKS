@@ -1,0 +1,125 @@
+﻿@model WebApplication1.Models.BookRoom
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@*<h1>Create</h1>
+
+<h4>BookRoom</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FromDate" class="control-label"></label>
+                <input asp-for="FromDate" class="form-control" />
+                <span asp-validation-for="FromDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NumberPeople" class="control-label"></label>
+                <input asp-for="NumberPeople" class="form-control" />
+                <span asp-validation-for="NumberPeople" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TelePhone" class="control-label"></label>
+                <input asp-for="TelePhone" class="form-control" />
+                <span asp-validation-for="TelePhone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Address" class="control-label"></label>
+                <input asp-for="Address" class="form-control" />
+                <span asp-validation-for="Address" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>*@
+
+<div class="container contact-form">
+    <div class="contact-image">
+        <img src="~/images/logo.png" alt="rocket_contact" style="width:100%; height:400px;" />
+    </div>
+    <form asp-action="Create">
+        <h3>Shilla Book Room</h3>
+        <div class="row">
+            <div class="col-md-6">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="Name" class="control-label"></label>
+                    <input asp-for="Name" class="form-control"  placeholder="Full Name *" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="FromDate" class="control-label"></label>
+                    <input asp-for="FromDate" class="form-control"/>
+                    <span asp-validation-for="FromDate" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="NumberPeople" class="control-label"></label>
+                    <input asp-for="NumberPeople" class="form-control"  placeholder="NumberPeople *" />
+                    <span asp-validation-for="NumberPeople" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="TelePhone" class="control-label"></label>
+                    <input asp-for="TelePhone" class="form-control"  placeholder="Input Phone *" />
+                    <span asp-validation-for="TelePhone" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Address" class="control-label"></label>
+                    <input asp-for="Address" class="form-control"  placeholder="Address *" />
+                    <span asp-validation-for="Address" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Create" class="btn btn-primary" />
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <textarea name="txtMsg" class="form-control" placeholder="Your Message *" style="width: 100%; height: 150px;"></textarea>
+                </div>
+            </div>
+        </div>
+    </form>
+    <div>
+        <a asp-action="Index">Back to List</a>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col>
+            <img src="~/images/rs.jpg" style="width:100%" />
+        </div>
+        <div class="col">
+            <img src="~/images/rs2.jpg" style="width:100%" />
+        </div>
+        <div class="col">
+            <img src="~/images/rs3.jpg" style="width:100%" />
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col">
+            <img src="~/images/rs4.jpg" style="width:100%" />
+        </div>
+        <div class="col">
+            <img src="~/images/rs5.jpg" style="width:100%" />
+        </div>
+        <div class="col">
+            <img src="~/images/rs6.jpg" style="width:100%" />
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
